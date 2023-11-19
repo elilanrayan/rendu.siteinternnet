@@ -1,0 +1,205 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size:62,5%;
+}
+
+header h1{
+    font-size: 2.6rem;
+    font-family: 'Source Serif 4', serif;
+}
+
+header h2{
+    font-size: 4.6rem;
+    font-family: 'Source Serif 4', serif;
+    font-size: 100px;
+}
+
+header h3{
+    font-size: 3rem;
+    font-weight: normal;
+}
+
+header h4,h5{
+    font-size: 2rem;
+}
+
+header li{
+    font-size: 2rem;
+}
+
+a{
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+/* HEADER */
+
+.main-head{
+    background-color: rgb(165, 42, 42);
+    color: whitesmoke;
+}
+
+nav{
+    min-height: 1Ovh;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin:auto;
+    padding: 1rem;
+    flex-wrap: wrap;
+}
+
+nav ul{
+    display: flex;
+    flex: 1 1 40rem;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    font-family: 'DM Sans', sans-serif;
+}
+
+#logo{
+    flex: 2 1 40rem;
+}
+
+
+/*MAIN*/
+
+.main{
+    min-height: 90vh;
+    background: linear-gradient(rgb(0,0,0,0.6),transparent),url("../img/achat.jpg");
+    background-size: cover;
+    background-position: bottom;
+    color: whitesmoke;
+}
+
+
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .9rem 3rem;
+    font-size: 1.7rem;
+    color: antiquewhite;
+    background: brown;
+    cursor: pointer;
+
+}
+
+.btn:hover{
+    letter-spacing: .2rem;
+}
+
+.heading{
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    padding-bottom:3.5rem;
+    font-size: 4rem;
+}
+
+.heading span{
+    color: brown;
+    text-transform: uppercase;
+}
+
+.menu .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
+    gap: 1.5rem;
+}
+
+.menu .box-container .box{
+    padding: 5rem;
+    text-align: center;
+    border: 2rem;
+}
+
+.menu .box-container .box img{
+    width: 100%;
+    border-radius: 30px;
+}
+
+.menu .box-container .box h3{
+    color: black;
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+
+.menu .box-container .box .price{
+    color: aliceblue;
+    font-size: 2.5rem;
+    padding: .5rem 0;
+}
+
+.menu .box-container .box .price span{
+    font-size: 1.5rem;
+    text-decoration: line-through;
+}
+
+.menu .box-container .box:hover{
+    background:grey;
+}
+
+
+
+/* Footer*/
+
+footer{
+    background-color: rgb(46, 46, 46);
+    padding: 50px 0;
+}
+
+footer h3{
+    color:bisque;
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.footer{
+    display: flex;
+    justify-items: center;
+    justify-content: space-evenly;
+}
+
+
+@media screen and (max-width: 885px) {
+    html{
+        font-size: 45%;
+    }
+    nav{
+        text-align: center;
+    }
+    #logo{
+        padding: 2rem;
+    }
+    
+    .footer{
+        width: 50%;
+    }
+}
+
+@media (max-width:390px) {
+    html{
+        font-size: 35%;
+    }
+    nav{
+        text-align: center;
+    }
+    #logo{
+        padding: 2rem;
+    }
+
+    .menu{
+        width: 390px;
+    }
+    
+    .footer{
+        width: 390px;
+    }
+
+}
